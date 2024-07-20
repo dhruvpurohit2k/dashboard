@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My DashBoard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My DashBoard</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <div id="sidebar">
-    <p class="sidebar-item">DASHBOARD</p>
-    <section class="sidebar-links">
-      <ul>
-        <li><button>Home</button></li>
-        <li><button>Profile</button></li>
-        <li><button>Messages</button></li>
-        <li><button>History</button></li>
-        <li><button>Task</button></li>
-        <li><button>Communities</button></li>
-      </ul>
-    </section>
-    <section class="sidebar-links support">
-      <ul>
-        <li><button>Settings</button></li>
-        <li><button>Support</button></li>
-        <li><button>Privacy</button></li>
-      </ul>
-    </section>
-  </div>
-  <div id="header">
-    <div class="headerblock">
-      <div id="searchbar">
-        <p>SEARCH</p>
-        <input type="text" placeholder="Enter Search Here....">
-      </div>
+  <body>
+    <div id="sidebar">
+      <p class="sidebar-item">DASHBOARD</p>
+      <section class="sidebar-links">
+        <ul>
+          <li><button>Home</button></li>
+          <li><button>Profile</button></li>
+          <li><button>Messages</button></li>
+          <li><button>History</button></li>
+          <li><button>Task</button></li>
+          <li><button>Communities</button></li>
+        </ul>
+      </section>
+      <section class="sidebar-links support">
+        <ul>
+          <li><button>Settings</button></li>
+          <li><button>Support</button></li>
+          <li><button>Privacy</button></li>
+        </ul>
+      </section>
+    </div>
+    <div id="header">
+      <div class="headerblock">
+        <div id="searchbar">
+          <p>SEARCH</p>
+          <input type="text" placeholder="Enter Search Here...." />
+        </div>
         <div id="profile">
           <p>Notification</p>
           <div>
@@ -42,46 +41,46 @@
             <span>THE NORD PROJECT</span>
           </div>
         </div>
+      </div>
+      <div class="headerblock">
+        <div id="bio">
+          <img src="assets/images/odin-lined.png" alt="Profile Picture" />
+          <p id="biotext">
+            Welcome,<br />
+            This is The Nord Project.
+          </p>
         </div>
-        <div class="headerblock">
-          <div id="bio">
-            <img src="assets/images/odin-lined.png" alt="Profile Picture">
-            <p id="biotext">
-              Welcome,<br>
-              This is The Nord Project.
-            </p>
-          </div>
-          <div id="buttons">
-            <button class="action-button">New</button>
-            <button class="action-button">Upload</button>
-            <button class="action-button">Share</button>
-          </div>
+        <div id="buttons">
+          <button class="action-button">New</button>
+          <button class="action-button">Upload</button>
+          <button class="action-button">Share</button>
+        </div>
+      </div>
     </div>
-  </div>
-  <main>
-    <section id="projects">
-      <p>Projects......</p>
-      <section id="project-display">
-        <!-- <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div>
-        <div class="project-card"></div> -->
+    <main>
+      <div id="project">
+        <p>Projects</p>
+        <div id="projectshow">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </div>
+      <section id="announcements">
+        <p>Announcements</p>
+        <!-- <div>
+    
+      </div> -->
       </section>
-    </section>
-    <section id="announcements">
-      <p>Announcements</p>
-      <!-- <div>
+      <section id="trending">
+        <p>Trending</p>
+        <!-- <div>
     
       </div> -->
-    </section>
-    <section id="trending">
-      <p>Trending</p>
-      <!-- <div>
-    
-      </div> -->
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
