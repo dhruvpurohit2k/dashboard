@@ -49,20 +49,26 @@ main {
 	grid-area: 2/2/3/3;
 	background-color: #d8dee9;
 	display: grid;
-	gap: 5px;
+	/* gap: 5px; */
 	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	* {
 		background-color: #eceff4;
 		padding: 10px;
 	}
+	.sectionheading {
+		font-size: 20px;
+		font-size: 1.5em;
+		font-family: Noto-regular;
+		color: #3b4252;
+		font-weight: 700;
+		padding: 0;
+		margin: 10px 40px;
+	}
 	#project {
 		grid-area: 1/1/3/2;
 		display: flex;
 		flex-direction: column;
-		p {
-			font-size: 20px;
-		}
 
 		#projectshow {
 			flex: 1;
@@ -73,16 +79,40 @@ main {
 			grid-template-columns: repeat(3, 1fr);
 			gap: 10px;
 			.card {
-				background-color: #3b42528a;
+				background-color: #d8dee9dd;
 				border-radius: 5px;
+				display: flex;
+				flex-direction: column;
+				min-height: auto;
+				min-width: 25ch;
+				position: relative;
+				.project-card-heading {
+					background-color: rgba(255, 255, 255, 0);
+					font-size: 1.2em;
+				}
+				.project-card-description {
+					background-color: rgba(255, 255, 255, 0);
+				}
+				.project-card-link {
+					margin-top: auto;
+					background-color: rgba(255, 255, 255, 0);
+				}
+				.buttons {
+					background-color: rgba(255, 255, 255, 0);
+					align-self: end;
+				}
 			}
 		}
 	}
 	#announcements {
 		grid-area: 1/2/2/3;
+		display: flex;
+		flex-direction: column;
 	}
 	#trending {
 		grid-area: 2/2/3/3;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -193,4 +223,13 @@ main {
 			}
 		}
 	}
+}
+
+.content {
+	background-color: #d8dee9dd;
+	flex: 1;
+	border-radius: 5px;
+	/* box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.3); */
+	display: flex;
+	flex-direction: column;
 }
