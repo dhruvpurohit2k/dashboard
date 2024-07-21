@@ -1,132 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My DashBoard</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
 
-	<body>
-		<div id="sidebar">
-			<p class="sidebar-item">DASHBOARD</p>
-			<section class="sidebar-links">
-				<ul>
-					<li><button>Home</button></li>
-					<li><button>Profile</button></li>
-					<li><button>Messages</button></li>
-					<li><button>History</button></li>
-					<li><button>Task</button></li>
-					<li><button>Communities</button></li>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My DashBoard</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<div id="sidebar">
+		<p class="sidebar-item">DASHBOARD</p>
+		<section class="sidebar-links">
+			<ul>
+				<li><button><img src="/assets/svgs/sidebar-icons/home-variant.svg" alt="Home page" class="icon sidebar">Home</button>
+				</li>
+				<li><button><img src="/assets/svgs/sidebar-icons/account.svg" alt="Home page" class="icon sidebar">Profile</button></li>
+				<li><button><img src="/assets/svgs/sidebar-icons/message.svg" alt="Home page" class="icon sidebar">Messages</button>
+				</li>
+				<li><button><img src="/assets/svgs/sidebar-icons/history.svg" alt="Home page" class="icon sidebar">History</button></li>
+				<li><button><img src="/assets/svgs/sidebar-icons/calendar-check.svg" alt="Home page" class="icon sidebar">Task</button>
+				</li>
+				<li><button><img src="/assets/svgs/sidebar-icons/community.svg" alt="Home page"
+							class="icon sidebar">Communities</button></li>
 				</ul>
-			</section>
-			<section class="sidebar-links support">
-				<ul>
-					<li><button>Settings</button></li>
-					<li><button>Support</button></li>
-					<li><button>Privacy</button></li>
+				</section>
+				<section class="sidebar-links support">
+					<ul>
+				<li><button><img src="/assets/svgs/sidebar-icons/cog.svg" alt="Home page" class="icon sidebar">Settings</button>
+				</li>
+				<li><button><img src="/assets/svgs/sidebar-icons/support.svg" alt="Home page" class="icon sidebar">Support</button></li>
+				<li><button><img src="/assets/svgs/sidebar-icons/shield-account.svg" alt="Home page"
+							class="icon sidebar">Privacy</button></li>
 				</ul>
-			</section>
-		</div>
-		<div id="header">
-			<div class="headerblock">
-				<div id="searchbar">
-					<p>SEARCH</p>
-					<input type="text" placeholder="Enter Search Here...." />
+				</section>
+				</div>
+				<div id="header">
+					<div class="headerblock">
+						<div id="searchbar">
+				<!-- <p>SEARCH</p> -->
+				<img src="/assets/svgs/magnify.svg" alt="search icon" id="searchicon" class="icon">
+				<input type="text" placeholder="Enter Search Here...." />
 				</div>
 				<div id="profile">
-					<p>Notification</p>
-					<div>
-						<!-- <img src="assets/images/odin-lined.png" alt="Profile Picture"> -->
-						<span>THE NORD PROJECT</span>
-					</div>
+				<!-- <p>Notification</p> -->
+				<img src="/assets/svgs/bell-alert-outline.svg" alt="Notification bell icon" class="icon">
+				<div>
+					<!-- <img src="assets/images/odin-lined.png" alt="Profile Picture"> -->
+					<span>THE NORD PROJECT</span>
 				</div>
-			</div>
-			<div class="headerblock">
-				<div id="bio">
-					<img src="assets/images/odin-lined.png" alt="Profile Picture" />
-					<p id="biotext">
-						Welcome,<br />
-						This is The Nord Project.
-					</p>
 				</div>
-				<div id="buttons">
-					<button class="action-button">New</button>
-					<button class="action-button">Upload</button>
-					<button class="action-button">Share</button>
 				</div>
-			</div>
-		</div>
-		<main>
-			<div id="project">
-				<p class="sectionheading">Projects</p>
-				<div id="projectshow">
-					<div class="card">
-						<p class="project-card-heading">Project Name</p>
-						<p class="project-card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-							repudiandae impedit vitae, quod exercitationem modi quos ullam
-							voluptate corporis, eveniet omnis inventore recusandae eius? Sed
-							cumque porro eum quisquam enim.
+				<div class="headerblock">
+					<div id="bio">
+						<div class="profile-pic"><img src="assets/images/odin-lined.png" alt="Profile Picture" /></div>
+						<p id="biotext">
+							Welcome,<br />
+							This is The Nord Project.
 						</p>
-						<a class="project-card-link">Link to the project</a>
-						<span class="buttons">like button</span>
-					</div>
-					<div class="card">
-						<p class="project-card-heading">Project Name</p>
-						<p class="project-card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-							repudiandae impedit vitae, quod exercitationem modi quos ullam
-							voluptate corporis, eveniet omnis inventore recusandae eius? Sed
-							cumque porro eum quisquam enim.
-						</p>
-						<a class="project-card-link">Link to the project</a>
-						<span class="buttons">like button</span>
-					</div>
-					<div class="card">
-						<p class="project-card-heading">Project Name</p>
-						<p class="project-card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-							repudiandae impedit vitae, quod exercitationem modi quos ullam
-							voluptate corporis, eveniet omnis inventore recusandae eius? Sed
-							cumque porro eum quisquam enim.
-						</p>
-						<a class="project-card-link">Link to the project</a>
-						<span class="buttons">like button</span>
-					</div>
-					<div class="card">
-						<p class="project-card-heading">Project Name</p>
-						<p class="project-card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-							repudiandae impedit vitae, quod exercitationem modi quos ullam
-							voluptate corporis, eveniet omnis inventore recusandae eius? Sed
-							cumque porro eum quisquam enim.
-						</p>
-						<a class="project-card-link">Link to the project</a>
-						<span class="buttons">like button</span>
-					</div>
-					<div class="card">
-						<p class="project-card-heading">Project Name</p>
-						<p class="project-card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-							repudiandae impedit vitae, quod exercitationem modi quos ullam
-							voluptate corporis, eveniet omnis inventore recusandae eius? Sed
-							cumque porro eum quisquam enim.
-						</p>
-						<a class="project-card-link">Link to the project</a>
-						<span class="buttons">like button</span>
-					</div>
-					<div class="card">
-						<p class="project-card-heading">Project Name</p>
-						<p class="project-card-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-							repudiandae impedit vitae, quod exercitationem modi quos ullam
-							voluptate corporis, eveniet omnis inventore recusandae eius? Sed
-							cumque porro eum quisquam enim.
-						</p>
-						<a class="project-card-link">Link to the project</a>
-						<span class="buttons">like button</span>
-					</div>
+						</div>
+						<div id="buttons">
+							<button class="action-button">New</button>
+							<button class="action-button">Upload</button>
+							<button class="action-button">Share</button>
+						</div>
+						</div>
+						</div>
+						<main>
+							<div id="project">
+								<p class="sectionheading">Projects</p>
+								<div id="projectshow">
+									<div class="card">
+										<p class="project-card-heading">Project Name</p>
+										<p class="project-card-description">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+											repudiandae impedit vitae, quod exercitationem modi quos ullam
+											voluptate corporis, eveniet omnis inventore recusandae eius? Sed
+											cumque porro eum quisquam enim.
+										</p>
+										<a class="project-card-link">Link to the project</a>
+								<div class="card-action">
+									<img src="/assets/svgs/card-actions/thumb-up.svg" alt="like button">
+									<img src="/assets/svgs/card-actions/share-variant.svg" alt="share button">
+								</div>
+								</div>
+								<div class="card">
+									<p class="project-card-heading">Project Name</p>
+									<p class="project-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+										repudiandae impedit vitae, quod exercitationem modi quos ullam
+										voluptate corporis, eveniet omnis inventore recusandae eius? Sed
+										cumque porro eum quisquam enim.
+									</p>
+									<a class="project-card-link">Link to the project</a>
+								<div class="card-action">
+									<img src="/assets/svgs/card-actions/thumb-up.svg" alt="like button">
+									<img src="/assets/svgs/card-actions/share-variant.svg" alt="share button">
+								</div>
+								</div>
+								<div class="card">
+									<p class="project-card-heading">Project Name</p>
+									<p class="project-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+										repudiandae impedit vitae, quod exercitationem modi quos ullam
+										voluptate corporis, eveniet omnis inventore recusandae eius? Sed
+										cumque porro eum quisquam enim.
+									</p>
+									<a class="project-card-link">Link to the project</a>
+								<div class="card-action">
+									<img src="/assets/svgs/card-actions/thumb-up.svg" alt="like button">
+									<img src="/assets/svgs/card-actions/share-variant.svg" alt="share button">
+								</div>
+								</div>
+								<div class="card">
+									<p class="project-card-heading">Project Name</p>
+									<p class="project-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+										repudiandae impedit vitae, quod exercitationem modi quos ullam
+										voluptate corporis, eveniet omnis inventore recusandae eius? Sed
+										cumque porro eum quisquam enim.
+									</p>
+									<a class="project-card-link">Link to the project</a>
+								<div class="card-action">
+									<img src="/assets/svgs/card-actions/thumb-up.svg" alt="like button">
+									<img src="/assets/svgs/card-actions/share-variant.svg" alt="share button">
+								</div>
+								</div>
+								<div class="card">
+									<p class="project-card-heading">Project Name</p>
+									<p class="project-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+										repudiandae impedit vitae, quod exercitationem modi quos ullam
+										voluptate corporis, eveniet omnis inventore recusandae eius? Sed
+										cumque porro eum quisquam enim.
+									</p>
+									<a class="project-card-link">Link to the project</a>
+								<div class="card-action">
+									<img src="/assets/svgs/card-actions/thumb-up.svg" alt="like button">
+									<img src="/assets/svgs/card-actions/share-variant.svg" alt="share button">
+								</div>
+								</div>
+								<div class="card">
+									<p class="project-card-heading">Project Name</p>
+									<p class="project-card-description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+										repudiandae impedit vitae, quod exercitationem modi quos ullam
+										voluptate corporis, eveniet omnis inventore recusandae eius? Sed
+										cumque porro eum quisquam enim.
+									</p>
+									<a class="project-card-link">Link to the project</a>
+								<div class="card-action">
+									<img src="/assets/svgs/card-actions/thumb-up.svg" alt="like button">
+									<img src="/assets/svgs/card-actions/share-variant.svg" alt="share button">
+								</div>
+								</div>
 				</div>
 			</div>
 			<div id="announcements">
@@ -149,6 +176,7 @@
 					<p>trending ....</p>
 				</div>
 			</section>
-		</main>
+	</main>
 	</body>
+
 </html>
